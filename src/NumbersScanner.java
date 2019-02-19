@@ -15,7 +15,7 @@ public class NumbersScanner {
 			arg = scanner.nextInt();
 			if (arg >= 0)
 				array.add(arg);
-			} while (arg >= 0);
+		} while (arg >= 0);
 		
 		scanner.close();
 		
