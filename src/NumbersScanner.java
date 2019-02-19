@@ -11,7 +11,7 @@ public class NumbersScanner {
 		int arg = 0;
 		
 		do {
-			System.out.println("Podaj liczbê: ");
+			System.out.println("Podaj liczbÄ™: ");
 			arg = scanner.nextInt();
 			if (arg >= 0)
 				array.add(arg);
