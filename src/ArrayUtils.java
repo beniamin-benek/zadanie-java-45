@@ -37,6 +37,6 @@ public class ArrayUtils {
 			if (array.get(i) > max)
 				max = array.get(i);
 		}
-		System.out.println("Najwiêkszy element: " + max);
+		System.out.println("Największy element: " + max);
 	}
 }
