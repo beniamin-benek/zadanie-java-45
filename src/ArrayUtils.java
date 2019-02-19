@@ -3,18 +3,14 @@ import java.util.List;
 public class ArrayUtils {
 
 	public static void printReversed(List<Integer> array) {
-		
 		for (int i = array.size() - 1; i >= 0; i--)
 			System.out.println(array.get(i));
-		
 	}
 	
 	public static int calculateSum(List<Integer> array) {
-		
 		if (array == null || array.size() == 0) throw new NullPointerException();
 		
 		int sum = 0;
-		
 		for(int i = 0; i < array.size(); i++) 
 			sum = sum + array.get(i);
 		
@@ -22,7 +18,6 @@ public class ArrayUtils {
 	}
 	
 	public static void printTheSmallest(List<Integer> array) {
-		
 		if (array == null || array.size() == 0) throw new NullPointerException();
 		
 		int min = array.get(0);
@@ -30,7 +25,6 @@ public class ArrayUtils {
 			if (array.get(i) < min)
 				min = array.get(i);
 		}
-		
 		System.out.println("Najmniejszy element: " + min);
 	}
 	
@@ -43,7 +37,6 @@ public class ArrayUtils {
 			if (array.get(i) > max)
 				max = array.get(i);
 		}
-		
-		System.out.println("Najwiêkszy element: " + max);
+		System.out.println("NajwiÃªkszy element: " + max);
 	}
 }
