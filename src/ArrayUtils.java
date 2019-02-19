@@ -4,7 +4,7 @@ public class ArrayUtils {
 
 	public static void printReversed(List<Integer> array) {
 		for (int i = array.size() - 1; i >= 0; i--)
-			System.out.println(array.get(i));
+			System.out.print(array.get(i) + ", ");
 	}
 	
 	public static int calculateSum(List<Integer> array) {
