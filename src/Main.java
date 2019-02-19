@@ -9,9 +9,10 @@ public class Main {
 		array = NumbersScanner.addToArray();
 
 		System.out.println("Lista: " + array.toString());
-			
+		System.out.print("Od tyłu: ") ;ArrayUtils.printReversed(array);
+
 		try {
-			System.out.println("Suma: " + ArrayUtils.calculateSum(array));
+			System.out.println("\nSuma: " + ArrayUtils.calculateSum(array));
 			ArrayUtils.printTheSmallest(array);
 			ArrayUtils.printTheBiggest(array);
 		} catch (NullPointerException e) {
