@@ -8,7 +8,6 @@ public class Main {
 		List<Integer> array = new LinkedList<Integer>();
 		array = NumbersScanner.addToArray();
 
-		
 		System.out.println("Lista: " + array.toString());
 			
 		try {
@@ -16,7 +15,7 @@ public class Main {
 			ArrayUtils.printTheSmallest(array);
 			ArrayUtils.printTheBiggest(array);
 		} catch (NullPointerException e) {
-			System.err.println("Poda³eœ nieistniej¹c¹ lub pust¹ listê.");
+			System.err.println("PodaÅ‚eÅ› nieistniejÄ…cÄ… lub pustÄ… listÄ™.");
 		}
 	
 	}
