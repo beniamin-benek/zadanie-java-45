@@ -9,7 +9,7 @@ public class Main {
 		array = NumbersScanner.addToArray();
 
 		System.out.println("Lista: " + array.toString());
-		System.out.print("Od tyłu: ") ;ArrayUtils.printReversed(array);
+		System.out.print("Od tyłu: "); ArrayUtils.printReversed(array);
 
 		try {
 			System.out.println("\nSuma: " + ArrayUtils.calculateSum(array));
