@@ -4,7 +4,7 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		List<Integer> array = new LinkedList<Integer>();
 		array = NumbersScanner.addToArray();
 
@@ -12,7 +12,7 @@ public class Main {
 		System.out.print("Od tyłu: "); ArrayUtils.printReversed(array);
 
 		try {
-			System.out.println("\nSuma: " + ArrayUtils.calculateSum(array));
+			ArrayUtils.printSum(array);
 			ArrayUtils.printTheSmallest(array);
 			ArrayUtils.printTheBiggest(array);
 		} catch (NullPointerException e) {
