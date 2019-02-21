@@ -1,12 +1,10 @@
-import java.util.LinkedList;
 import java.util.List;
 
-public class Main {
+class Main {
 
 	public static void main(String[] args) {
 
-		List<Integer> array = new LinkedList<Integer>();
-		array = NumbersScanner.addToArray();
+		List<Integer> array = NumbersScanner.addToArray();
 
 		System.out.println("Lista: " + array.toString());
 		System.out.print("Od tyłu: "); ArrayUtils.printReversed(array);
