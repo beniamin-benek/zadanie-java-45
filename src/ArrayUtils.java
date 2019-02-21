@@ -7,14 +7,21 @@ public class ArrayUtils {
 			System.out.print(array.get(i) + ", ");
 	}
 	
-	public static int calculateSum(List<Integer> array) {
+	public static void printSum(List<Integer> array) {
 		if (array == null || array.size() == 0) throw new NullPointerException();
 		
 		int sum = 0;
 		for(int i = 0; i < array.size(); i++) 
 			sum = sum + array.get(i);
-		
-		return sum;
+
+		System.out.print("\nSuma : ");
+		for(Integer num: array) {
+			if (!((num == array.get(array.size() - 1))))
+				System.out.print(num + " + ");
+			else
+				System.out.print(num + " = " + sum);
+		}
+		System.out.println();
 	}
 	
 	public static void printTheSmallest(List<Integer> array) {
